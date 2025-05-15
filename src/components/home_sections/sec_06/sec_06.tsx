@@ -31,7 +31,7 @@ const Sec_06 = () => {
         Learn More About
         <span className="font-bold">Our Space</span>
       </h2>
-      <div className="relative w-full  h-[70dvh]  rounded-xl overflow-hidden shadow-lg">
+      <div className="relative w-full  md:h-[70dvh] sm:h-[50dvh] h-[30dvh]  rounded-xl overflow-hidden shadow-lg">
         {!playVideo ? (
           <>
             <Image

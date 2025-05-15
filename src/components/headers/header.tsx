@@ -3,6 +3,7 @@ import React from "react";
 import Nav_NavLists from "./nav_lists";
 import Image from "next/image";
 import { CallSvgIcon, EmailSvgIcon } from "../global/icons";
+import SideBar from "./side-bar";
 
 const Header = () => {
   return (
@@ -17,7 +18,9 @@ const Header = () => {
         </div>
 
         {/* 2. navbar lists */}
-        <Nav_NavLists />
+       <div className="lg:block hidden">
+       <Nav_NavLists />
+       </div>
 
         {/* 2. contacts */}
         <div className="flex flex-col">
@@ -32,9 +35,14 @@ const Header = () => {
           </div>
         </div>
 
-        <button className="w-[147px] h-[45px] rounded-lg bg-white text-main text-lg cursor-pointer hover:bg-white/90 duration-300 transition-all">
+
+
+        <button className="w-[147px] lg:block hidden h-[45px] rounded-lg bg-white text-main text-lg cursor-pointer hover:bg-white/90 duration-300 transition-all">
         Contact Us
         </button>
+
+        <SideBar />
+
       </nav>
     </header>
   );
