@@ -23,7 +23,7 @@ const Footer = (props: Props) => {
 
             {/* 4 */}
         <div className="bg-amber-300 w-full col-span-2"></div>
-        origin  git@github.com:MSAFVANKV/Iv-Noviindus-2025.git
+        
             
     </footer>
   )
